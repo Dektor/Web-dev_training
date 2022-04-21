@@ -1,0 +1,144 @@
+html{
+}
+
+body{
+    margin: 0;
+}
+
+header{
+    background: url(images/header-bg.jpg) no-repeat center top / cover;
+    text-transform: uppercase;
+    height: 900px;
+}
+
+.wrapper-top-menu{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 57px;
+}
+
+.container{
+    width: 1170px;
+    margin: 0 auto;
+    font-family: 'Anton', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0.1em;
+}
+
+.menu{
+    margin-left: 69px;
+    line-height: 21px;
+}
+
+.menu > ul{
+    
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0%;
+}
+.menu > ul > li{
+    margin-right: 40px;
+}
+
+.phone{
+    position: absolute;
+    right: 0;
+}
+
+.phone > a{
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.content{
+    margin-top: 216px;
+    text-transform: uppercase;
+}
+
+.content > span{
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.content > h1 {
+    font-size: 100px;
+    margin: 0;
+    margin-top: -3px;
+    line-height: 151px;
+}
+
+.content > button{
+    margin-top: 15px;
+    border-style: none;
+    border: 1px solid #fff;
+    padding: 18px 23px 17px 23px;
+    background: transparent;
+    color: #fff;
+    font-size: 17px;
+    transition: all 0.3s ease;
+    line-height: 26px;
+}
+
+.content > button:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.container > h1{
+    margin-top: 113px;
+    color: #000;
+    font-size: 50px;
+}
+
+.blog-wrapper{
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    color: #000;
+}
+
+.left-column , 
+.right-column{
+    width: 564px;
+}
+
+.right-column{
+    margin-left:36px;
+}
+
+.left-column > h2 ,
+.right-column > h2{
+    font-size: 25px;
+    margin-top: 58px;
+    text-transform: uppercase;
+}
+.left-column > p ,
+.right-column > p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.container > .image-wrapper{
+    margin-top: 67px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    padding: 114px 0 80px 0;
+}
+
+.copy-right-info{
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    display: flex;
+}
+
+.copy-right-info > p{
+    margin-right: 55px;
+    font-size: 15px
+}
