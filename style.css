@@ -1,29 +1,15 @@
-html{
-    max-width: 100%;
-}
-
 body{
     margin: 0;
 }
 
-.main{
-    width: 100%;
-}
+/* header block */
 
 header{
-    background: url(images/header-bg.jpg) no-repeat center top / cover;
+    background: url(images/background/header-bg.jpg) no-repeat center top / cover;
     text-transform: uppercase;
     height: 900px;
 }
-
-.wrapper-top-menu{
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-top: 57px;
-}
-
-.container{
+.container {
     max-width: 1170px;
     margin: 0 auto;
     font-family: 'Anton', sans-serif;
@@ -31,55 +17,73 @@ header{
     color: #fff;
     letter-spacing: 0.1em;
 }
-
-.menu{
+.container-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top: 57px;
+}
+.wrapper-menu {
+    max-width: 100%;
     margin-left: 69px;
     line-height: 21px;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    justify-content: center;
 }
-
-.menu > ul{
-    
+.wrapper-menu__logo-icon {
+    Width: 31px;
+}
+.logo-icon {
+    width: 100%;
+    height: 100%;
+}
+.wrapper-menu__nav {
+    display: flex;
+    align-items: center;
+    margin-left: 69px;
+}
+.wrapper-menu_list {
     display: flex;
     align-items: center;
     list-style: none;
     padding: 0%;
 }
-.menu > ul > li > a{
+nav > a{
     color: #fff;
     text-decoration: none;
-    margin-right: 40px;
+    margin-right: 80px;
 }
-
-.phone{
-    position: absolute;
+.wrapper-menu__phone {
+    position:absolute;
     right: 0;
 }
-
-.phone > a{
+.wrapper-menu__phone > a{
     text-decoration: none;
-    font-size: 14px;
-    text-transform: uppercase;
     color: #fff;
 }
 
-.content{
+/* Body block */
+
+.container-body__content {
     margin-top: 216px;
     text-transform: uppercase;
 }
-
-.content > span{
+.container-body__content > span{
     font-size: 30px;
     line-height: 45px;
 }
 
-h1 {
+.container-body__content > h1{
     font-size: 100px;
     margin: 0;
     margin-top: -3px;
     line-height: 151px;
 }
-
-.content > button{
+.container-body__content > button{
     margin-top: 15px;
     border-style: none;
     border: 1px solid #fff;
@@ -92,203 +96,186 @@ h1 {
     cursor: pointer;
 }
 
-.content > button:hover{
+.container-body__content > button:hover{
     background-color: #fff;
     color: #000;
 }
 
-.about-wrapper{
+/* blog block */
+
+.about-content {
+    color: #000;
     padding-top: 113px;
 }
-
-.about-wrapper > span{
-    color: #000;
+.about-content__header {
     font-size: 50px;
 }
-
-.blog-wrapper{
+.about-content__blog-wrapper {
     display: flex;
     justify-content: space-between;
     text-align: justify;
     color: #000;
 }
 
-.left-column , 
-.right-column{
-    width: 564px;
-}
-
-.right-column{
-    margin-left:36px;
-}
-
-.left-column > h2 ,
-.right-column > h2{
+.blog-title{
     font-size: 25px;
     margin-top: 58px;
     text-transform: uppercase;
 }
-.left-column > p ,
-.right-column > p{
+
+.about-content__left-column,
+.about-content__right-column {
+    width: 100%;
+    max-width: 564px;
+}
+.about-content__text {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
-.about-wrapper > .image-wrapper{
-    margin-top: 67px;
+
+/* image block */
+
+.about-content__image-block {
     display: flex;
     justify-content: space-between;
 }
+.img-top-block > img,
+.img-bottom-block > img{
+    width: 100%;
+}
+.about-content__image-wrapper {
+    margin-top: 67px;
+}
 
-.image-block > img,
-.image-bottom-block > img{
-        width: 100%;
-    }
+/* footer block */
 
-footer{
+.footer-wrapper {
     padding: 114px 0 80px 0;
 }
 
-.copy-right-info{
+.footer-wrapper__copyright-info {
+    display: flex;
+    flex-direction: row;
     font-family: 'Open Sans', sans-serif;
     color: #000;
-    display: flex;
+    
 }
-
-.copy-right-info > p{
+.footer_wrapper__left-column{
     margin-right: 55px;
+}
+.footer-wrapper__copyright-info > p{
     font-size: 15px
 }
 
-
-@media screen and (max-width:1440px)
-{
-    header{
-        margin: 0 auto;
-    }
-
+@media screen and (max-width:1024px) {
     .container{
-        max-width: 80%;
-        margin: 30px;
-        margin: 0 auto;
+        padding:0 80px;
+    }
+    .about-content__header{
+        display: flex;
+        justify-content:center;
+    }
+    .blog-title{
+        display: flex;
+        justify-content:center;
+    }
+    .about-content__blog-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .about-wrapper > .image-wrapper{
+    .about-content__image-block{
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        max-width: 100%;
-        margin: 0 auto;
-    }
-    .about{
-        margin: 0 auto;
-    }
-    
-    .blog-wrapper{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .about-wrapper > .left-column,
-    .about-wrapper > .right-column{
-        width: 270px;
-    }
-
-    footer{
-        max-width: 80%;
-        margin: 0 auto;
-    }
-}
-
-@media screen and (max-width:1390px) {
-    .about-wrapper > .image-wrapper{
         max-width: 570px;
-    }
-}
-
-
-@media screen and (max-width:1024px)
-{
-    .header{
-        max-width: 60%;
         margin: 0 auto;
     }
-    .container{
-        max-width: 70%;
-        margin: 30px;
-        margin: 0 auto;
+    .img-bottom-block{
+        margin-top: 30px;
     }
-    
 }
 
 @media screen and (max-width:768px) {
-    h1{
-        font-size: 80px;
-        line-height:normal;
+    .container-header{
+        display: block;
+        margin: 0;
     }
-    .container{
-        max-width: 80%;
+    .wrapper-menu__logo-icon{
+        position: absolute;
+        left: 0%;
     }
-
-    .about{
-        max-width: 90%;
-        margin: 0 auto;
+    .wrapper-menu{
+        margin: 0;
     }
-
-    .about-wrapper > span{
-        display: flex;
-        justify-content: center;
-    }
-
-    h2{
-        display: flex;
-        justify-content: center;
-    }
-
-    .blog-wrapper{
+    .wrapper-menu__nav,
+    .wrapper-menu__phone,
+    .wrapper-menu__list > nav{
         display: flex;
         flex-direction: column;
-    }
-    .blog-wrapper > .right-column{
-        margin-left: 0%;
-    }
-
-    .about-wrapper > .image-wrapper{
-        max-width: 564px;
-        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 0;
     }
 
-    .image-wrapper > .image-block{
-        width: 49%;
+    .wrapper-menu__list > nav > a{
+        margin: 0;
+        margin-bottom: 20px;
     }
-
-    .image-wrapper > .image-bottom-block{
-        width: 100%;
-        padding-top: 1%;
+}
+@media screen and (max-width:699px) {
+    .about-content__image-block{
+        justify-content: center;
     }
-
-    .image-block > img,
-    .image-bottom-block > img{
-        width: 100%;
+}
+@media screen and (max-width:490px) {
+    .container-body__content{
+        text-align: center;
+    }
+    .container-body__content > span{
+        font-size: 20px;
     }
     
-    footer{
-        width: 100%;
+    .container-body__content > h1{
+        font-size: 70px;
+        line-height: 80px;
     }
 
-    .copy-right-info{
-        max-width: 100%;
+    .about-content__header{
+        text-align: center;
+    }
+
+    .blog-title > h2{
+        font-size: 20px;
+    }
+    .blog-text > p{
+        font-size: 18px;
+    }
+    .about-content__image-wrapper{
+        margin-top: 20px;
+    }
+    .img-bottom-block{
+        max-width: 265px;
+        margin-top: 20px;
+    }
+    .footer_wrapper__left-column{
+        margin: 0;
+    }
+    .footer-wrapper__copyright-info{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 }
 
-
-@media screen and (max-width:425px) {
-
-    .image-wrapper > img{
-        width: 50px;
+@media screen and (max-width:376px) {
+    .container{
+        padding: 40px;
     }
-
-    .container > .image-wrapper{
-        width: 100px;
+    .footer-wrapper{
+        padding-top: 30px;
     }
 }
